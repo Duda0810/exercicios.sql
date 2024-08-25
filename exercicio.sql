@@ -79,4 +79,18 @@ WHERE estoque > 1000
 ORDER BY Id_produtos DESC;
 
 
-SELECT nome
+18. SELECT Clientes.Id_clientes, Clientes.nome, Pedidos.data_pedidos
+FROM Clientes
+INNER JOIN Pedidos ON Clientes.Id_clientes = Pedidos.Id_clientes;
+
+19.UPDATE Produtos
+SET preco = 1.00
+WHERE Id_produtos = 1;
+
+
+UPDATE Clientes
+SET telefone = 5155555555
+WHERE Id_clientes = 3;
+
+
+
